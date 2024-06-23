@@ -1,6 +1,5 @@
-// import { addToCart } from "./addToCart";
-import { homeQuantityToggle } from "./homeQuantityToggle";
 import { addToCart } from "./addToCart";
+import { homeQuantityToggle } from "./homeQuantityToggle";
 
 const productContainer = document.querySelector("#productContainer");
 const productTemplate = document.querySelector("#productTemplate");
@@ -35,12 +34,11 @@ export const showProductContainer = (products) => {
         homeQuantityToggle(event, id, stock);
       });
 
-
     productClone
-    .querySelector(".add-to-cart-button")
-    .addEventListener("click", (event) => {
-      addToCart(event, id, name, price, image);
-    })
+      .querySelector(".add-to-cart-button")
+      .addEventListener("click", (event) => {
+        addToCart(event, id, stock);
+      });
 
     productContainer.append(productClone);
   });

@@ -1,11 +1,8 @@
-import './style.css'
+import "./style.css";
+import products from "./api/products.json";
+import { showProductContainer } from "./homeProductCards";
 
-import products from './api/products.json'
-import { showProductContainer } from './homeProductCards'
-
-
-// called the function to display 
-
+// Define a function named `showProductContainer` that takes an array of products as input.
 showProductContainer(products);
 
-// homeQuantityToggle()
+//todo Don't Forget To LIKE SHARE & SUBSCRIBE TO THAPA TECHNCIAL YOUTUBE CHANNEL 👉 https://www.youtube.com/thapatechnical
